@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# 🧸 Rx-Bear's Resume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+這是 [Rx-Bear](https://rx-bear.work) 的個人履歷網站，提供專案展示、聯絡方式與技能簡介。
 
-Currently, two official plugins are available:
+📍 網站連結：https://resume.rx-bear.work  
+🔁 主域名自動重定向：https://rx-bear.work → resume.rx-bear.work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ 特點
 
-## Expanding the ESLint configuration
+- 🌐 使用 React + Tailwind CSS 建構
+- 🧠 使用 GSAP 實現動畫效果（進場、滾動觸發）
+- 🧱 Shadcn/UI 提供一致的元件樣式
+- 📲 響應式設計，適配手機與桌面裝置
+- 🔐 HTTPS 安全連線（SSL by Let's Encrypt）
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 技術棧
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **前端框架**：React + Vite
+- **動畫庫**：GSAP、ScrollTrigger、SplitText
+- **元件庫**：Shadcn/ui、Lucide React Icons
+- **工具庫**：classnames、TypeScript
+- **部署方式**：Vercel / Netlify / 自建伺服器（任選）
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 開發與部署
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# 安裝依賴
+npm install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+# 本地開發
+npm run dev
+
+# 編譯
+npm run build
+
+# 預覽
+npm run preview
