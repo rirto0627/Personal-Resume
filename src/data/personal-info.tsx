@@ -1,4 +1,5 @@
 import MiraiIceDept from "@/assets/MiraiIceDept.webp"
+import ResumeWebsite from "@/assets/ResumeWebsite.webp"
 import Avatar from "@/assets/Avatar.webp"
 import {
 
@@ -106,7 +107,15 @@ export const personalInfo = {
             technologies: ["React", "TypeScript", "Tailwind CSS"],
             imageUrl: MiraiIceDept,
             demoUrl:"http://birthday.mirai-ice-dept.com",
-            codeUrl:""
+            codeUrl:"https://github.com/rirto0627/miraie-ice-dept-2025"
+        },
+        {
+            title: "個人履歷網站",
+            description: "展示自我技能和作品集的地方",
+            technologies: ["React", "TypeScript", "Tailwind CSS"],
+            imageUrl:ResumeWebsite ,
+            demoUrl:"http://resume.rx-bear.work",
+            codeUrl:"https://github.com/rirto0627/Personal-Resume"
         }
     ],
     typeAnimationSequences: [
